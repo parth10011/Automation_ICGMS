@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PreInspection._01_PreInspection_InitiateNewProcess">
+      <class name="MotorClaim._01_MotorClaim_InitiateNewProcess">
         <methods>
           <include name="Logout"/>
-          <include name="InitiateNewProcess"/>
+          <include name="MotorClaim_InitiateNewProcess"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- PreInspection._01_PreInspection_InitiateNewProcess -->
+      </class> <!-- MotorClaim._01_MotorClaim_InitiateNewProcess -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

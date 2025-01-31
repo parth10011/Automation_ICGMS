@@ -23,8 +23,8 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 	{
 		//Login
 //		Reporter.log("Random Car Number : " + randomCarRegistration);
-		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 0);
-		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 1); 
+		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 1);
+		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 2); 
 		login_ICGMS lp = new login_ICGMS(driver);
 		lp.login(username, pass);
 		
@@ -85,6 +85,5 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 			driver.findElement(By.xpath("//a[@href='/claim-details']")).click();
 			
 	}
-	
 	
 }

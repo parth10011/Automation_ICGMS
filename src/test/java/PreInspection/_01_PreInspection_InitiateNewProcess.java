@@ -21,8 +21,8 @@ public class _01_PreInspection_InitiateNewProcess extends BaseClassICGMS
 	public void InitiateNewProcess() throws InterruptedException, AWTException, EncryptedDocumentException, IOException 
 	{
 		// Login
-		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 0);
-		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 1); 
+		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 1);
+		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 2); 
 		login_ICGMS lp = new login_ICGMS(driver);
 		lp.login(username, pass);
 		Thread.sleep(500);

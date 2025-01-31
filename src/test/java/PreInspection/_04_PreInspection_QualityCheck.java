@@ -19,8 +19,8 @@ public class _04_PreInspection_QualityCheck extends BaseClassICGMS
 	public void Quality_Check() throws InterruptedException, AWTException, EncryptedDocumentException, IOException 
 	{
 		// Login
-		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 0);
-		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 1); 
+		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 1);
+		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 2); 
 		login_ICGMS lp = new login_ICGMS(driver);
 		lp.login(username, pass);
 		Thread.sleep(500);

@@ -44,7 +44,7 @@ public class BaseClassICGMS implements InitiateNewProcess_details
 			Thread.sleep(1000);
 			
 			String fileName = "screenshot_"+ current_date+"_" +current_time+ ".png";
-			File dest = new File("C:\\Users\\parth\\git\\AutomationProject\\Automation\\src\\ICGMS_Interface\\Test Data\\"+fileName);
+			File dest = new File("./TestScreenshot/"+fileName);
 			
 			try {
 				Files.copy(src, dest);

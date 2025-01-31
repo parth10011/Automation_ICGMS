@@ -110,7 +110,7 @@ public class _02_MotorClaim_ClaimFormSubmission extends BaseClassICGMS
     	
     	//Upload Front Lh View Image   	        
     	WebElement Front_Lh_View_Input = driver.findElement(By.xpath("//input[@id='front_lh_view']")); 
-//    	Thread.sleep(1000);
+    	Thread.sleep(1000);
     	Front_Lh_View_Input.sendKeys(Img_Link);
     	
     	

@@ -24,10 +24,10 @@ public interface InitiateNewProcess_details
 	String National = "38";
 	String Kotak = "41";
 	String Sampo = "40";
-	String Iffco = "5";
-	String Chola = "6";
-	String Bajaj = "4";
-	String Sbi = "7";
+	String Iffco = "16";
+	String Chola = "14";
+	String Bajaj = "13";
+	String Sbi = "17";
 	
 	String url = "https://release.icgms.sharajman.com/";
 	String url_UAT = "https://uat.icgms.insapp.in/";

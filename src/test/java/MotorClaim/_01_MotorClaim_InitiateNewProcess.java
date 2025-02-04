@@ -24,8 +24,8 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 		String Custemail = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Log, 1, 0);
 		//Login
 //		Reporter.log("Random Car Number : " + randomCarRegistration);
-		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 1);
-		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 2); 
+		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 0);
+		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 1); 
 		login_ICGMS lp = new login_ICGMS(driver);
 		lp.login(username, pass);
 		
@@ -47,7 +47,7 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 		WebElement Insurer = driver.findElement(By.xpath("//*[@id=\"main-wrapper\"]/div[1]/div/app-claim-intimation/div[1]/div/div/div[3]/div/div/select"));
 			
 				Select s3 = new Select(Insurer);
-				s3.selectByValue(Sbi);
+				s3.selectByValue(Sampo);
 				
 			// Fill the required details
 			driver.findElement(By.cssSelector("input[formcontrolname='customer_email']")).sendKeys(Custemail);
@@ -57,10 +57,10 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 			driver.findElement(By.xpath("//input[@formcontrolname='policy_to']")).sendKeys("29122025");
 			driver.findElement(By.xpath("//input[@placeholder='Enter Customer Name']")).sendKeys(randomName);
 			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Repairer Name')]")).sendKeys("Daaaacead");
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Make')]")).sendKeys("Kawasaki");
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Model')]")).sendKeys("Ninja");
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Type')]")).sendKeys("SUV");
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Color')]")).sendKeys("Goblin Green");
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Make')]")).sendKeys("Maruti");
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Model')]")).sendKeys("Baleno");
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Type')]")).sendKeys("Hatchback");
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Color')]")).sendKeys("Grey");
 			driver.findElement(By.xpath("(//input[contains(@placeholder,'Enter your remark')])[1]")).sendKeys("Enter Remark 2");
 			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Registration Number')]")).sendKeys(randomCarRegistration);
 			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Repairer Number')]")).sendKeys(randomMobileNumber);

@@ -21,6 +21,7 @@ public class _01_PreInspection_InitiateNewProcess extends BaseClassICGMS
 	public void InitiateNewProcess() throws InterruptedException, AWTException, EncryptedDocumentException, IOException 
 	{
 		// Login
+		String Custemail = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Login, 1, 0);
 		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Login, 1, 1);
 		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Login, 1, 2); 
 		login_ICGMS lp = new login_ICGMS(driver);
@@ -47,7 +48,7 @@ public class _01_PreInspection_InitiateNewProcess extends BaseClassICGMS
 		s3.selectByValue(type_2wheeler);
 
 		// Fill the required details
-		driver.findElement(By.cssSelector("input[formcontrolname='customer_email']")).sendKeys(Cust_Email1);
+		driver.findElement(By.cssSelector("input[formcontrolname='customer_email']")).sendKeys(Custemail);
 		driver.findElement(By.cssSelector("input[formcontrolname='customer_mobile_no']")).sendKeys(randomMobileNumber);
 		driver.findElement(By.xpath("//input[@placeholder='Enter Customer Name']")).sendKeys(randomName);
 		driver.findElement(By.xpath("//input[@placeholder='Enter Vehicle Number']")).sendKeys(randomCarRegistration);

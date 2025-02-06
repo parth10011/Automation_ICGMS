@@ -20,8 +20,8 @@ public class _02_PreInspection_CustomerFormFill extends BaseClassICGMS
 	public void Customer_Form_Fill() throws InterruptedException, AWTException, EncryptedDocumentException, IOException 
 	{
 		//Login
-		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Login, 1, 1);
-		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Login, 1, 2); 
+		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Login, 1, 0);
+		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Login, 1, 1); 
 		login_ICGMS lp = new login_ICGMS(driver);
 		lp.login(username, pass);
 		

@@ -21,8 +21,8 @@ public class _02_MotorClaim_ClaimFormSubmission extends BaseClassICGMS
 	public void MotorClaim_ClaimFormSubmission() throws InterruptedException, AWTException, EncryptedDocumentException, IOException
 	{	
 		//Login
-		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Log, 1, 0);
-		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Log, 1, 1); 
+		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Login, 1, 0);
+		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Login, 1, 1); 
 		login_ICGMS lp = new login_ICGMS(driver);
 		lp.login(username, pass);
 		

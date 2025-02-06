@@ -20,8 +20,8 @@ public class _04_MotorClaim_CustomerReview extends BaseClassICGMS
 	{
 		
 		//Login
-		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Log, 1, 0);
-		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Log, 1, 1); 
+		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Login, 1, 0);
+		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Login, 1, 1); 
 		login_ICGMS lp = new login_ICGMS(driver);
 		lp.login(username, pass);
 		

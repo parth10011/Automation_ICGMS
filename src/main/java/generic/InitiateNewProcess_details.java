@@ -13,8 +13,9 @@ public interface InitiateNewProcess_details
 
 {	
 	String EXCEL_PATH = "./src/test/resources/TestData/ICGMS Test Data.xlsx";
-	String Admin_Log = "SuperAdmin";
-	String Cust_Log = "Customer";
+	String Admin_Login = "SuperAdmin";
+	String Cust_Login = "Customer";
+	String Repair_Login = "Repairer";
 	String Oriental = "39";
 	String Royal = "1";
 	String United = "36";

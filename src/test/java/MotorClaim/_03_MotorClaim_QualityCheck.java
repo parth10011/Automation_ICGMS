@@ -18,8 +18,8 @@ public class _03_MotorClaim_QualityCheck extends BaseClassICGMS
 	public void MotorClaim_QualityCheck() throws InterruptedException, AWTException, EncryptedDocumentException, IOException
 	{
 		//Login
-		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 0);
-		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 1); 
+		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Login, 1, 0);
+		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Login, 1, 1); 
 		login_ICGMS lp = new login_ICGMS(driver);
 		lp.login(username, pass);
 		

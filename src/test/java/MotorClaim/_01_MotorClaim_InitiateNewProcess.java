@@ -21,11 +21,11 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 	@Test
 	public void MotorClaim_InitiateNewProcess() throws InterruptedException, AWTException, EncryptedDocumentException, IOException
 	{
-		String Custemail = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Log, 1, 0);
+		String Custemail = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Cust_Login, 1, 0);
 		//Login
 //		Reporter.log("Random Car Number : " + randomCarRegistration);
-		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 0);
-		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Log, 1, 1); 
+		String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Login, 1, 0);
+		String pass = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Admin_Login, 1, 1); 
 		login_ICGMS lp = new login_ICGMS(driver);
 		lp.login(username, pass);
 		

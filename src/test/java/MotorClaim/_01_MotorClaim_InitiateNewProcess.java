@@ -40,14 +40,15 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 
 		
 				Select s2 = new Select(Product);
-				s2.selectByValue("1");
+				s2.selectByVisibleText("Motor Claim");
 				Thread.sleep(200);
 		
-		//Select Insurer		
+		//Select Insurer	
+		String insurer_Name = DBFunction.getDataFromExcelSheet(EXCEL_PATH, MotorClaim_Insurer_Name, 1, 0);
 		WebElement Insurer = driver.findElement(By.xpath("//*[@id=\"main-wrapper\"]/div[1]/div/app-claim-intimation/div[1]/div/div/div[3]/div/div/select"));
 			
 				Select s3 = new Select(Insurer);
-				s3.selectByValue(Sampo);
+				s3.selectByVisibleText(insurer_Name);
 				
 			// Fill the required details
 			driver.findElement(By.cssSelector("input[formcontrolname='customer_email']")).sendKeys(Custemail);
@@ -79,12 +80,12 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 			Thread.sleep(1000);
 			
 			// Submit Details
-			WebElement submit = driver.findElement(By.xpath("/html/body/app-root/app-full-layout/div/div[1]/div/app-claim-intimation/div[2]/form/div[2]/button[1]"));			
-			submit.click();
+//			WebElement submit = driver.findElement(By.xpath("/html/body/app-root/app-full-layout/div/div[1]/div/app-claim-intimation/div[2]/form/div[2]/button[1]"));			
+//			submit.click();
 			Thread.sleep(1000);
 			
 			// Toaster Popup Click
-			ToasterPopupClick();
+//			ToasterPopupClick();
 				
 			//Open View List
 			driver.findElement(By.xpath("//a[@href='/claim-details']")).click();

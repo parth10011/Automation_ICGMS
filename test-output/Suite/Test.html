@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 03 15:04:01 IST 2025</td>
+<td>Started on:</td><td>Thu Feb 06 17:35:41 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>43 seconds (43251 ms)</td>
+<tr><td>Total time:</td><td>133 seconds (133491 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,63 +75,32 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='MotorClaim._02_MotorClaim_ClaimFormSubmission.MotorClaim_ClaimFormSubmission()'><b>MotorClaim_ClaimFormSubmission</b><br>Test class: MotorClaim._02_MotorClaim_ClaimFormSubmission<br/>
-<a href="#Output-956337311" onClick='toggleBox("Output-956337311", this, "Show output", "Hide output");'>Show output</a>
+<td title='PreInspection._04_PreInspection_QualityCheck.Quality_Check()'><b>Quality_Check</b><br>Test class: PreInspection._04_PreInspection_QualityCheck<br/>
+<a href="#Output-820804897" onClick='toggleBox("Output-820804897", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-956337311" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-956337311">
+<a href="#Output-820804897" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-820804897">
 Login Successfull<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Enter Date of inward&apos;]&quot;}
-  (Session info: chrome=132.0.6834.160)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 1
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f43a818ddcc500c1f55f9d4b954b5f4e, findElement {value=//input[@placeholder=&apos;Enter Date of inward&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\parth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65315/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f43a818ddcc500c1f55f9d4b954b5f4e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at MotorClaim._02_MotorClaim_ClaimFormSubmission.MotorClaim_ClaimFormSubmission(_02_MotorClaim_ClaimFormSubmission.java:37)
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:393)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:277)
+	at PreInspection._04_PreInspection_QualityCheck.Quality_Check(_04_PreInspection_QualityCheck.java:86)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace956337311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace956337311'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Enter Date of inward&apos;]&quot;}
-  (Session info: chrome=132.0.6834.160)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace820804897", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace820804897'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 1
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f43a818ddcc500c1f55f9d4b954b5f4e, findElement {value=//input[@placeholder=&apos;Enter Date of inward&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\parth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65315/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f43a818ddcc500c1f55f9d4b954b5f4e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at MotorClaim._02_MotorClaim_ClaimFormSubmission.MotorClaim_ClaimFormSubmission(_02_MotorClaim_ClaimFormSubmission.java:37)
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:393)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:277)
+	at PreInspection._04_PreInspection_QualityCheck.Quality_Check(_04_PreInspection_QualityCheck.java:86)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -161,8 +130,8 @@ Session ID: f43a818ddcc500c1f55f9d4b954b5f4e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>12</td>
-<td>MotorClaim._02_MotorClaim_ClaimFormSubmission@6572421</td></tr>
+<td>14</td>
+<td>PreInspection._04_PreInspection_QualityCheck@515aebb0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -172,17 +141,41 @@ Session ID: f43a818ddcc500c1f55f9d4b954b5f4e
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='MotorClaim._01_MotorClaim_InitiateNewProcess.MotorClaim_InitiateNewProcess()'><b>MotorClaim_InitiateNewProcess</b><br>Test class: MotorClaim._01_MotorClaim_InitiateNewProcess<br/>
-<a href="#Output-1073051173" onClick='toggleBox("Output-1073051173", this, "Show output", "Hide output");'>Show output</a>
+<td title='PreInspection._01_PreInspection_InitiateNewProcess.InitiateNewProcess()'><b>InitiateNewProcess</b><br>Test class: PreInspection._01_PreInspection_InitiateNewProcess<br/>
+<a href="#Output-1682619279" onClick='toggleBox("Output-1682619279", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1073051173" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1073051173">
+<a href="#Output-1682619279" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1682619279">
 Login Successfull<br/>
 </div>
 </td>
 <td></td>
-<td>11</td>
-<td>MotorClaim._01_MotorClaim_InitiateNewProcess@402bba4f</td></tr>
+<td>9</td>
+<td>PreInspection._01_PreInspection_InitiateNewProcess@123ef382</td></tr>
+<tr>
+<td title='PreInspection._02_PreInspection_CustomerFormFill.Customer_Form_Fill()'><b>Customer_Form_Fill</b><br>Test class: PreInspection._02_PreInspection_CustomerFormFill<br/>
+<a href="#Output-536671860" onClick='toggleBox("Output-536671860", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-536671860" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-536671860">
+Login Successfull<br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>PreInspection._02_PreInspection_CustomerFormFill@52bf72b5</td></tr>
+<tr>
+<td title='PreInspection._03_PreInspection_PreCheck.Pre_Check()'><b>Pre_Check</b><br>Test class: PreInspection._03_PreInspection_PreCheck<br/>
+<a href="#Output-1636824514" onClick='toggleBox("Output-1636824514", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1636824514" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1636824514">
+Login Successfull<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>PreInspection._03_PreInspection_PreCheck@37afeb11</td></tr>
 </table><p>
 </body>
 </html>

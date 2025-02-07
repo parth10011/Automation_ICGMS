@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="MotorClaim._02_MotorClaim_ClaimFormSubmission">
+      <class name="PreInspection._04_PreInspection_QualityCheck">
         <methods>
           <include name="Logout"/>
+          <include name="Quality_Check"/>
           <include name="setup"/>
-          <include name="MotorClaim_ClaimFormSubmission"/>
         </methods>
-      </class> <!-- MotorClaim._02_MotorClaim_ClaimFormSubmission -->
+      </class> <!-- PreInspection._04_PreInspection_QualityCheck -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

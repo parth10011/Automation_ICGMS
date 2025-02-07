@@ -45,7 +45,7 @@ public class _01_PreInspection_InitiateNewProcess extends BaseClassICGMS
 		WebElement Insurer = driver.findElement(By.xpath("//*[@id=\"main-wrapper\"]/div[1]/div/app-claim-intimation/div[1]/div/div/div[3]/div/div/select"));
 
 		Select s3 = new Select(Insurer);
-		s3.selectByValue(type_2wheeler);
+		s3.selectByValue(type_car);
 
 		// Fill the required details
 		driver.findElement(By.cssSelector("input[formcontrolname='customer_email']")).sendKeys(Custemail);
@@ -57,7 +57,7 @@ public class _01_PreInspection_InitiateNewProcess extends BaseClassICGMS
 		driver.findElement(By.xpath("//input[@placeholder='Enter Fuel Type']")).sendKeys("Petrol");
 		driver.findElement(By.xpath("//input[@placeholder='Enter Make']")).sendKeys("Mitsubishi");
 		driver.findElement(By.xpath("//input[@placeholder='Enter Model']")).sendKeys("Omni");
-		driver.findElement(By.xpath("//input[@placeholder='Enter Rreference number']")).sendKeys("AM907RAAXCD");
+		driver.findElement(By.xpath("//input[@placeholder='Enter Rreference number']")).sendKeys("PA07CBNV33");
 		driver.findElement(By.xpath("//input[@placeholder='Enter City']")).sendKeys("Rohini");
 		driver.findElement(By.xpath("//input[@placeholder='Enter Branch Name']")).sendKeys("parliament Rd");
 

@@ -83,14 +83,14 @@ public class _04_PreInspection_QualityCheck extends BaseClassICGMS
 		WebElement Image_Type = driver.findElement(By.xpath("//select[@formcontrolname='imageType']"));
 
 		Select s = new Select(Image_Type);
-		s.selectByValue("1");
+		s.selectByVisibleText("REAR LHS QTR VIEW");
 		Thread.sleep(500);
 		
 		//Select Component
 		WebElement Component = driver.findElement(By.xpath("//select[@formcontrolname='component']"));
 
 		Select s2 = new Select(Component);
-		s2.selectByValue("1");
+		s2.selectByVisibleText("LHS Rear Door");
 		Thread.sleep(500);
 		
 		//Damage Noticed Radio Button Click

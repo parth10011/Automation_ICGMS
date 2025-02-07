@@ -35,16 +35,16 @@ public class _03_PreInspection_PreCheck extends BaseClassICGMS
 		driver.findElement(By.xpath("(//button[text()='Pre Check'])[1]")).click();
 		
 		// Front View Image approval
-//		WebElement Front_View = driver.findElement(By.xpath("(//i[@class='eye-icon mdi mdi-eye'])[1]"));
-//		Front_View.click();
-//		WebElement Accept = driver.findElement(By.xpath("//button[text()=' Accept ']"));
-//		Accept.click();
-//		Thread.sleep(1000);
+		WebElement Front_View = driver.findElement(By.xpath("(//i[@class='eye-icon mdi mdi-eye'])[1]"));
+		Front_View.click();
+		WebElement Accept = driver.findElement(By.xpath("//button[text()=' Accept ']"));
+		Accept.click();
+		Thread.sleep(1000);
 		
 		// Chassis Number Image approval
 		WebElement Chassis_View = driver.findElement(By.xpath("(//i[@class='eye-icon mdi mdi-eye'])[2]"));
 		Chassis_View.click();
-		WebElement Accept = driver.findElement(By.xpath("//button[text()=' Accept ']"));
+		Accept = driver.findElement(By.xpath("//button[text()=' Accept ']"));
 		Accept.click();
 		Thread.sleep(1000);
 		

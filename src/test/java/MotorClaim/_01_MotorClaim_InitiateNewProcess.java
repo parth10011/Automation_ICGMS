@@ -54,17 +54,17 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 			driver.findElement(By.cssSelector("input[formcontrolname='customer_email']")).sendKeys(Custemail);
 			driver.findElement(By.cssSelector("input[formcontrolname='customer_mobile_no']")).sendKeys(randomMobileNumber);
 			driver.findElement(By.cssSelector("input[formcontrolname='policy_number']")).sendKeys("JAN"+current_date);
-			driver.findElement(By.xpath("//input[@formcontrolname='policy_from']")).sendKeys("22122024");
-			driver.findElement(By.xpath("//input[@formcontrolname='policy_to']")).sendKeys("29122025");
-			driver.findElement(By.xpath("//input[@placeholder='Enter Customer Name']")).sendKeys(randomName);
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Repairer Name')]")).sendKeys("Daaaacead");
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Make')]")).sendKeys("Maruti");
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Model')]")).sendKeys("Baleno");
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Type')]")).sendKeys("Hatchback");
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Color')]")).sendKeys("Grey");
+			driver.findElement(By.xpath("//input[@formcontrolname='policy_from']")).sendKeys("22012024");
+			driver.findElement(By.xpath("//input[@formcontrolname='policy_to']")).sendKeys("29012028");
+			driver.findElement(By.xpath("//input[@placeholder='Enter Customer Name']")).sendKeys(randomCustName);
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Repairer Name')]")).sendKeys(randomRepairName);
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Make')]")).sendKeys("Lamborghini");
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Model')]")).sendKeys("Galardo");
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Type')]")).sendKeys("Super");
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Color')]")).sendKeys(randomColorName);
 			driver.findElement(By.xpath("(//input[contains(@placeholder,'Enter your remark')])[1]")).sendKeys("Enter Remark 2");
 			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Registration Number')]")).sendKeys(randomCarRegistration);
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Repairer Number')]")).sendKeys(randomMobileNumber);
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Repairer Number')]")).sendKeys(randomRepairerNumber);
 			driver.findElement(By.xpath("(//input[contains(@placeholder,'Enter your remark')])[2]")).sendKeys("Enter Remark 1");
 			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Year of Mfg')]")).sendKeys(randomYear);
 			
@@ -82,9 +82,9 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 			// Submit Details
 //			WebElement submit = driver.findElement(By.xpath("/html/body/app-root/app-full-layout/div/div[1]/div/app-claim-intimation/div[2]/form/div[2]/button[1]"));			
 //			submit.click();
-			Thread.sleep(1000);
-			
-			// Toaster Popup Click
+//			Thread.sleep(1000);
+//			
+//			// Toaster Popup Click
 //			ToasterPopupClick();
 				
 			//Open View List

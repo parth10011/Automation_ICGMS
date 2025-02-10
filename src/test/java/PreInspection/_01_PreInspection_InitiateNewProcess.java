@@ -50,7 +50,7 @@ public class _01_PreInspection_InitiateNewProcess extends BaseClassICGMS
 		// Fill the required details
 		driver.findElement(By.cssSelector("input[formcontrolname='customer_email']")).sendKeys(Custemail);
 		driver.findElement(By.cssSelector("input[formcontrolname='customer_mobile_no']")).sendKeys(randomMobileNumber);
-		driver.findElement(By.xpath("//input[@placeholder='Enter Customer Name']")).sendKeys(randomName);
+		driver.findElement(By.xpath("//input[@placeholder='Enter Customer Name']")).sendKeys(randomCustName);
 		driver.findElement(By.xpath("//input[@placeholder='Enter Vehicle Number']")).sendKeys(randomCarRegistration);
 		driver.findElement(By.xpath("//input[@placeholder='Enter State']")).sendKeys("Delhi");
 		driver.findElement(By.xpath("//input[@placeholder='Enter year of mfg']")).sendKeys(randomYear);

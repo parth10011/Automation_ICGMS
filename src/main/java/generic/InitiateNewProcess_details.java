@@ -3,8 +3,6 @@ package generic;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Random;
 
 import org.openqa.selenium.Dimension;
@@ -64,8 +62,11 @@ public interface InitiateNewProcess_details
 	Dimension Mobile_View = new Dimension (765 , 1000); //(375 , 812)
 	String randomCarRegistration = generateRandomCarRegistration();
 	String randomMobileNumber = generateRandomMobileNumber();
+	String randomRepairerNumber = generateRandomMobileNumber();
 	String randomYear = getRandomYear();
-	String randomName = getRandomName();
+	String randomCustName = getRandomName();
+	String randomRepairName = getRandomName();
+	String randomColorName = getRandomColor();
 	String Est_Report = "C:\\Users\\parth\\Downloads\\TAS-Manage Master - REC Bid Date-130924-051456.pdf";
 	String Img_Link = "C:\\Users\\parth\\OneDrive\\Pictures\\Screenshots\\Screenshot 2024-10-14 103740.png";
 	String Vid_Link = "C:\\Users\\parth\\OneDrive\\Desktop\\DTU\\ICGMS\\Sample Video.mp4";
@@ -123,20 +124,47 @@ public interface InitiateNewProcess_details
 	//Generate Name
 	public static String getRandomName() {
         // List of names
-        List<String> names = Arrays.asList(
-            "Mathias", "Tobias", "Cristopher", "Ronald", "Donovan", "Fabian", "Luciano", "Masao", 
-            "Moses", "Angel", "Zaid", "Conner", "Jared", "Jasper", "Larry", "Eugene", "Devyn", 
-            "Kamden", "Armani", "Derick", "Ellis", "Ali", "Camron", "Darrell", "Cortez", "Peter", 
-            "Jerome", "Pierre", "Sage", "Sheldon", "Hassan", "Kristopher", "Darryl", "Trey", "Russell", 
-            "Korbin", "Abram", "Anton", "Cason", "Frederick" , "Collin" , "Aditya" , "Aurther" , "Kazama"
-        );
+		String[] names = {
+	            "Mathias", "Tobias", "Cristopher", "Ronald", "Donovan", "Fabian", "Luciano", "Masao", 
+	            "Moses", "Angel", "Zaid", "Conner", "Jared", "Jasper", "Larry", "Eugene", "Devyn", 
+	            "Kamden", "Armani", "Derick", "Ellis", "Ali", "Camron", "Darrell", "Cortez", "Peter", 
+	            "Jerome", "Pierre", "Sage", "Sheldon", "Hassan", "Kristopher", "Darryl", "Trey", "Russell", 
+	            "Korbin", "Abram", "Anton", "Cason", "Frederick", "Collin", "Aditya", "Aurther", "Kazama", "Ravi", "Bikash",
+	            "Rajat", "Diwakar", "Asim", "Roop"
+	        };
 
-        // Randomly select a name    
-        Random random = new Random();
-        int index = random.nextInt(names.size()); // Generate a random index
-        return names.get(index); // Return the name at the random index
+	        // Randomly select a name
+	        Random random = new Random();
+	        int index = random.nextInt(names.length); // Generate a random index
+	        
+			return names[index];
     }
 	
+	
+	//Generate Color
+		public static String getRandomColor() {
+	        // List of Colors
+			String[] colorNames = {
+		            "Red", "Green", "Blue", "Yellow", "Cyan", "Magenta", "Black", "White",
+		            "Gray", "Orange", "Pink", "Purple", "Brown", "Lime", "Teal", "Indigo",
+		            "Violet", "Olive", "Maroon", "Beige", "Coral", "Turquoise", "Lavender",
+		            "Gold", "Silver", "Bronze", "Charcoal", "Ivory", "Salmon", "Peach", 
+		            "Crimson", "Azure", "Amber", "Mint", "Plum", "Chocolate", "Navy", "Sienna",
+		            "Forest Green", "Slate", "Sky Blue", "Sand", "Rust", "Periwinkle", "Mustard", 
+		            "Burgundy", "Fuchsia", "Tan", "Emerald", "Ruby", "Topaz", "Pine", "Jet",
+		            "Apricot", "Sapphire", "Olive Drab", "Wheat", "Mauve", "Lilac", "Magenta", 
+		            "Papaya", "Pea Green", "Copper", "Khaki", "Royal Blue", "Electric Blue",
+		            "Sea Green", "Mint Cream", "Snow", "Lemon", "Pistachio", "Almond", "Grape",
+		            "Watermelon", "Mint Green", "Lilac", "Lavender Blush", "Blush", "Seashell", 
+		            "Raspberry", "Caramel", "Celeste", "Cantaloupe", "Frost", "Pineapple"
+		        };
+
+		        // Randomly select a name
+		        Random random = new Random();
+		        int index = random.nextInt(colorNames.length); // Generate a random index
+		        
+				return colorNames[index];
+	    }
 	
 }
 

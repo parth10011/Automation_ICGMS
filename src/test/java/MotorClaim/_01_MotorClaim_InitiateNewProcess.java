@@ -7,6 +7,7 @@ import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
@@ -30,15 +31,15 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 		lp.login(username, pass);
 		
 		// Toaster Popup Click
-		ToasterPopupClick();	  
-	    
+		ToasterPopupClick();
+		
 		// Initiate Claim
-		driver.findElement(By.xpath("//a[@href='/claim']")).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='/claim']"))).click();
 		
 		//Select Product
 		WebElement Product = driver.findElement(By.xpath("//*[@id=\"main-wrapper\"]/div[1]/div/app-claim-intimation/div[1]/div/div/div[2]/div/div/select"));
 
-		
+
 				Select s2 = new Select(Product);
 				s2.selectByVisibleText("Motor Claim");
 				Thread.sleep(200);
@@ -51,16 +52,16 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 				s3.selectByVisibleText(insurer_Name);
 				
 			// Fill the required details
-			driver.findElement(By.cssSelector("input[formcontrolname='customer_email']")).sendKeys(Custemail);
-			driver.findElement(By.cssSelector("input[formcontrolname='customer_mobile_no']")).sendKeys(randomMobileNumber);
-			driver.findElement(By.cssSelector("input[formcontrolname='policy_number']")).sendKeys("JAN"+current_date);
-			driver.findElement(By.xpath("//input[@formcontrolname='policy_from']")).sendKeys("22012024");
-			driver.findElement(By.xpath("//input[@formcontrolname='policy_to']")).sendKeys("29012028");
-			driver.findElement(By.xpath("//input[@placeholder='Enter Customer Name']")).sendKeys(randomCustName);
+			driver.findElement(By.xpath("//input[contains(@formcontrolname, 'customer_email')]")).sendKeys(Custemail);
+			driver.findElement(By.xpath("//input[contains(@formcontrolname, 'customer_mobile_no')]")).sendKeys(randomMobileNumber);
+			driver.findElement(By.xpath("//input[contains(@formcontrolname, 'policy_number')]")).sendKeys("FEB"+current_date);
+			driver.findElement(By.xpath("//input[contains(@formcontrolname, 'policy_from')]")).sendKeys("22012024");
+			driver.findElement(By.xpath("//input[contains(@formcontrolname, 'policy_to')]")).sendKeys("29012028");
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Customer Name')]")).sendKeys(randomCustName);
 			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Repairer Name')]")).sendKeys(randomRepairName);
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Make')]")).sendKeys("Lamborghini");
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Model')]")).sendKeys("Galardo");
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Type')]")).sendKeys("Super");
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Make')]")).sendKeys("Maruti");
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Model')]")).sendKeys("Omni EV");
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Type')]")).sendKeys("Local");
 			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Color')]")).sendKeys(randomColorName);
 			driver.findElement(By.xpath("(//input[contains(@placeholder,'Enter your remark')])[1]")).sendKeys("Enter Remark 2");
 			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Registration Number')]")).sendKeys(randomCarRegistration);
@@ -80,12 +81,12 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 			Thread.sleep(1000);
 			
 			// Submit Details
-//			WebElement submit = driver.findElement(By.xpath("/html/body/app-root/app-full-layout/div/div[1]/div/app-claim-intimation/div[2]/form/div[2]/button[1]"));			
-//			submit.click();
-//			Thread.sleep(1000);
-//			
-//			// Toaster Popup Click
-//			ToasterPopupClick();
+			WebElement submit = driver.findElement(By.xpath("/html/body/app-root/app-full-layout/div/div[1]/div/app-claim-intimation/div[2]/form/div[2]/button[1]"));			
+			submit.click();
+			Thread.sleep(1000);
+			
+			// Toaster Popup Click
+			ToasterPopupClick();
 				
 			//Open View List
 			driver.findElement(By.xpath("//a[@href='/claim-details']")).click();

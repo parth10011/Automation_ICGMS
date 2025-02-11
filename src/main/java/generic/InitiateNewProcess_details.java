@@ -31,6 +31,7 @@ public interface InitiateNewProcess_details
 	
 	String url = "https://release.icgms.sharajman.com/";
 	String url_UAT = "https://uat.icgms.insapp.in/";
+	String url_Local = "http://192.168.32.28:4200/";
 //	String SuperAdmin_Email2 = "superadmnphase1@owleyes.ch";
 //	String SuperAdmin_Email1 = "jasim@superadmin.com";
 	String Cust_Pass = "Admin123";

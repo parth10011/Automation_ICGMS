@@ -31,7 +31,7 @@ public class BaseClassICGMS implements InitiateNewProcess_details
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get(url);
+		driver.get(url_Local);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 	}

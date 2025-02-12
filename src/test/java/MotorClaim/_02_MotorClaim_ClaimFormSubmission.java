@@ -34,13 +34,13 @@ public class _02_MotorClaim_ClaimFormSubmission extends BaseClassICGMS
 		view_details.click();
 		
 		// Fill the required details
-		driver.findElement(By.xpath("//input[@placeholder='Enter Date of inward']")).sendKeys(current_date);
+		driver.findElement(By.xpath("//input[@placeholder='Date of inward']")).sendKeys(current_date);
 		driver.findElement(By.xpath("(//input[@placeholder='dd/mm/yyyy'])[3]")).sendKeys(current_date);
 //		driver.findElement(By.xpath("//input[@placeholder='Enter Policy No./Cover No']")).sendKeys("OLAUBERRAPIDODRIVEIN");
 		driver.findElement(By.xpath("//input[@placeholder='Enter Insured Name']")).sendKeys("Rajat Dalal");
 		driver.findElement(By.xpath("//textarea[@placeholder='Enter Address for Communication']")).sendKeys("Villa Rd, Delhi 110033");
 		driver.findElement(By.xpath("//input[@placeholder='Enter Pincode']")).sendKeys("110033");
-		driver.findElement(By.xpath("//input[@placeholder='Enter Mobile Number']")).sendKeys("6534362327");
+//		driver.findElement(By.xpath("//input[@placeholder='Enter Mobile Number']")).sendKeys("6534362327");
 		driver.findElement(By.xpath("//input[@placeholder='Enter PAN Number']")).sendKeys("ABCTY1234D");
 		driver.findElement(By.xpath("//input[@placeholder='Enter Email']")).sendKeys("abc@new.cc");
 		driver.findElement(By.xpath("(//input[@placeholder='dd/mm/yyyy'])[4]")).sendKeys(current_date);

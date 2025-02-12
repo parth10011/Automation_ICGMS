@@ -14,6 +14,7 @@ public interface InitiateNewProcess_details
 	String Admin_Login = "SuperAdmin";
 	String Cust_Login = "Customer";
 	String Repair_Login = "Repairer";
+	String Insurer_Login = "Insurer_Log";
 	String MotorClaim_Insurer_Name = "MotorClaim_Insurer";
 	String Oriental = "39";
 	String Royal = "1";

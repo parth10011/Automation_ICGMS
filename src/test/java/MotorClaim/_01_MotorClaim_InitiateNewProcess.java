@@ -59,9 +59,9 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 			driver.findElement(By.xpath("//input[contains(@formcontrolname, 'policy_to')]")).sendKeys("29012028");
 			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Customer Name')]")).sendKeys(randomCustName);
 			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Repairer Name')]")).sendKeys(randomRepairName);
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Make')]")).sendKeys("Ola");
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Model')]")).sendKeys("S1 pro");
-			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Type')]")).sendKeys("Local");
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Make')]")).sendKeys("Sonar");
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Model')]")).sendKeys("Cube Front");
+			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Type')]")).sendKeys("socube");
 			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Color')]")).sendKeys(randomColorName);
 			driver.findElement(By.xpath("(//input[contains(@placeholder,'Enter your remark')])[1]")).sendKeys("Enter Remark 2");
 			driver.findElement(By.xpath("//input[contains(@placeholder,'Enter Registration Number')]")).sendKeys(randomCarRegistration);

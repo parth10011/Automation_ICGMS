@@ -22,5 +22,14 @@ public class login_ICGMS extends BaseClassICGMS
 		driver.findElement(By.xpath("(//button[@type='submit'])[1]")).click();
 		Reporter.log("Login Successfull");
 	}
+	//Select Role
+//	WebElement role = driver.findElement(By.name("role"));
+//
+//
+//	Select s1 = new Select(role);
+//	s1.selectByContainsVisibleText("CUSTOMER");
+//	Thread.sleep(200);
+//	WebElement roleSubmit = driver.findElement(By.xpath("(//button[@type='submit'])[1]"));
+//	roleSubmit.click();
 	
 }

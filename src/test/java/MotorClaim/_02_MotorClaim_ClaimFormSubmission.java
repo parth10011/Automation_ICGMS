@@ -34,15 +34,15 @@ public class _02_MotorClaim_ClaimFormSubmission extends BaseClassICGMS
 		view_details.click();
 		
 		// Fill the required details
-//		driver.findElement(By.xpath("//input[@placeholder='Date of inward']")).sendKeys(current_date);
-//		driver.findElement(By.xpath("(//input[@placeholder='dd/mm/yyyy'])[3]")).sendKeys(current_date);
-////		driver.findElement(By.xpath("//input[@placeholder='Enter Policy No./Cover No']")).sendKeys("OLAUBERRAPIDODRIVEIN");
-//		driver.findElement(By.xpath("//input[@placeholder='Enter Insured Name']")).sendKeys("Jin Kazama");
-//		driver.findElement(By.xpath("//textarea[@placeholder='Enter Address for Communication']")).sendKeys("Villa Rd, Delhi 110033");
-//		driver.findElement(By.xpath("//input[@placeholder='Enter Pincode']")).sendKeys("110033");
-//		driver.findElement(By.xpath("//input[@placeholder='Enter PAN Number']")).sendKeys("ABCTY1234D");
+		driver.findElement(By.xpath("//input[@placeholder='Enter Date of inward' or @placeholder='Date of inward']")).sendKeys(current_date);
+		driver.findElement(By.xpath("(//input[@placeholder='dd/mm/yyyy'])[3]")).sendKeys(current_date);
+//		driver.findElement(By.xpath("//input[@placeholder='Enter Policy No./Cover No']")).sendKeys("OLAUBERRAPIDODRIVEIN");
+		driver.findElement(By.xpath("//input[@placeholder='Enter Insured Name']")).sendKeys("Jin Kazama");
+		driver.findElement(By.xpath("//textarea[@placeholder='Enter Address for Communication']")).sendKeys("Villa Rd, Delhi 110033");
+		driver.findElement(By.xpath("//input[@placeholder='Enter Pincode']")).sendKeys("110033");
+		driver.findElement(By.xpath("//input[@placeholder='Enter PAN Number']")).sendKeys("ABCTY1234D");
 //		driver.findElement(By.xpath("//input[@placeholder='Enter Email']")).sendKeys("abc@new.cc");
-//		driver.findElement(By.xpath("(//input[@placeholder='dd/mm/yyyy'])[4]")).sendKeys(current_date);
+		driver.findElement(By.xpath("(//input[@placeholder='dd/mm/yyyy'])[4]")).sendKeys(current_date);
 		
 		//Choose location on map
 		driver.findElement(By.xpath("//input[@type='address_map']")).click();
@@ -50,14 +50,17 @@ public class _02_MotorClaim_ClaimFormSubmission extends BaseClassICGMS
 		Thread.sleep(1000);
 		
 		//Signature
-    	WebElement Sigarea = driver.findElement(By.xpath("//textarea[@placeholder='Please Sign']"));
+    	WebElement Sigarea = driver.findElement(By.xpath("//textarea[@placeholder='Sign here.........' or @placeholder='  ']"));
     	Sigarea.click();
     	Thread.sleep(1000);
-    	WebElement canvas = driver.findElement(By.xpath("//canvas[@width='700' or height='200']"));
-    	canvas.click();
+    	
+    	WebElement canvas = driver.findElement(By.xpath("//canvas[@width='700' and @height='200']"));
+    	SignatureDraw(canvas);
     	Thread.sleep(1000);
+    	
     	WebElement submit_sign = driver.findElement(By.xpath("//button[text()='Submit the signature']"));
     	submit_sign.click();
+    	
     	WebElement close_sign = driver.findElement(By.xpath("//button[@aria-label='Close']"));
     	close_sign.click();
     	Thread.sleep(1000);

@@ -10,6 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
@@ -27,13 +28,11 @@ public class BaseClassICGMS implements InitiateNewProcess_details
 		@BeforeMethod
 		public void setup()
 	{
-		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(url);
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	}
 		
 		public void get_screenshot() throws InterruptedException
@@ -62,6 +61,17 @@ public class BaseClassICGMS implements InitiateNewProcess_details
 		        toaster.click();
 		        Thread.sleep(500);
 			}
+		
+		public void SignatureDraw(WebElement c) throws InterruptedException
+		{
+			Actions actions = new Actions(driver);
+
+	        actions.moveToElement(c, 40, 40).clickAndHold()
+	        	   .moveByOffset(-100, 0).moveByOffset(0, -50)
+	               .moveByOffset(100, 0).moveByOffset(0, -50)
+	               .moveByOffset(-100, 0).moveByOffset(0, -50)
+	               .release().perform();
+		}
 		
 		
 		@AfterMethod

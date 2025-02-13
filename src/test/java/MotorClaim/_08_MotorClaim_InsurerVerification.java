@@ -29,13 +29,13 @@ public class _08_MotorClaim_InsurerVerification extends BaseClassICGMS
 		ToasterPopupClick();
 		
 		//Scroll to the particular web element of page
-	    WebElement InsurerVeri = driver.findElement(By.xpath("(//button[text()='Insurer Verification'])[1]"));
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView();", InsurerVeri);					
-		Thread.sleep(500);
+//	    WebElement InsurerVeri = driver.findElement(By.xpath("(//button[text()='Insurer Verification'])[1]"));
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("arguments[0].scrollIntoView();", InsurerVeri);					
+//		Thread.sleep(500);
 		
 		//Insurer Verification Button Click
-		InsurerVeri = driver.findElement(By.xpath("(//button[text()='Insurer Verification'])[1]"));
+		WebElement InsurerVeri = driver.findElement(By.xpath("(//button[text()='Insurer Verification'])[1]"));
 		InsurerVeri.click();
 		
 		//Enter Claim Number

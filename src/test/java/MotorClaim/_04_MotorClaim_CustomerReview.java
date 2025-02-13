@@ -38,8 +38,8 @@ public class _04_MotorClaim_CustomerReview extends BaseClassICGMS
 		approve_button.click();
 		
 		//Signature
-    	WebElement canvas = driver.findElement(By.xpath("//canvas[@width='700' or height='200']"));
-    	canvas.click();
+		WebElement canvas = driver.findElement(By.xpath("//canvas[@width='700' and @height='200']"));
+    	SignatureDraw(canvas);
     	Thread.sleep(1000);
     	WebElement submit_sign = driver.findElement(By.xpath("//button[text()='Submit the signature']"));
     	submit_sign.click();

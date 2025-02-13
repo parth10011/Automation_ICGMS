@@ -70,7 +70,7 @@ public interface InitiateNewProcess_details
 	String randomRepairName = getRandomName();
 	String randomColorName = getRandomColor();
 	String Est_Report = "C:\\Users\\parth\\Downloads\\TAS-Manage Master - REC Bid Date-130924-051456.pdf";
-	String Img_Link = "C:\\Users\\parth\\OneDrive\\Pictures\\Screenshots\\Screenshot 2024-10-14 103740.png";
+	String Img_Link = "C:/Users/parth/OneDrive/Desktop/DTU/ICGMS/Insurer - Claims of all insurers are visible to Royal Sundaram Insurer.png";
 	String Vid_Link = "C:\\Users\\parth\\OneDrive\\Desktop\\DTU\\ICGMS\\Sample Video.mp4";
 	String Doc_Link = "C:\\Users\\parth\\OneDrive\\Desktop\\DTU\\Dummy.pdf";
 	String Amt_Repair = "50000";
@@ -161,7 +161,7 @@ public interface InitiateNewProcess_details
 		            "Raspberry", "Caramel", "Celeste", "Cantaloupe", "Frost", "Pineapple"
 		        };
 
-		        // Randomly select a name
+		        // Randomly select a color name
 		        Random random = new Random();
 		        int index = random.nextInt(colorNames.length); // Generate a random index
 		        

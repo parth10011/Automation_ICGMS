@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 06 17:35:41 IST 2025</td>
+<td>Started on:</td><td>Fri Feb 14 13:18:15 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>133 seconds (133491 ms)</td>
+<tr><td>Total time:</td><td>81 seconds (81297 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,72 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='PreInspection._04_PreInspection_QualityCheck.Quality_Check()'><b>Quality_Check</b><br>Test class: PreInspection._04_PreInspection_QualityCheck<br/>
-<a href="#Output-820804897" onClick='toggleBox("Output-820804897", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-820804897" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-820804897">
-Login Successfull<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 1
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:393)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:277)
-	at PreInspection._04_PreInspection_QualityCheck.Quality_Check(_04_PreInspection_QualityCheck.java:86)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace820804897", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace820804897'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with value: 1
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:393)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:277)
-	at PreInspection._04_PreInspection_QualityCheck.Quality_Check(_04_PreInspection_QualityCheck.java:86)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>14</td>
-<td>PreInspection._04_PreInspection_QualityCheck@515aebb0</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -141,41 +75,53 @@ Driver info: driver.version: unknown
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='PreInspection._01_PreInspection_InitiateNewProcess.InitiateNewProcess()'><b>InitiateNewProcess</b><br>Test class: PreInspection._01_PreInspection_InitiateNewProcess<br/>
-<a href="#Output-1682619279" onClick='toggleBox("Output-1682619279", this, "Show output", "Hide output");'>Show output</a>
+<td title='MotorClaim._03_MotorClaim_QualityCheck.MotorClaim_QualityCheck()'><b>MotorClaim_QualityCheck</b><br>Test class: MotorClaim._03_MotorClaim_QualityCheck<br/>
+<a href="#Output-1598434875" onClick='toggleBox("Output-1598434875", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1682619279" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1682619279">
+<a href="#Output-1598434875" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1598434875">
+Login Successfull<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>MotorClaim._03_MotorClaim_QualityCheck@4d9e68d0</td></tr>
+<tr>
+<td title='MotorClaim._04_MotorClaim_CustomerReview.MotorClaim_CustomerReview()'><b>MotorClaim_CustomerReview</b><br>Test class: MotorClaim._04_MotorClaim_CustomerReview<br/>
+<a href="#Output-418299920" onClick='toggleBox("Output-418299920", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-418299920" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-418299920">
 Login Successfull<br/>
 </div>
 </td>
 <td></td>
 <td>9</td>
-<td>PreInspection._01_PreInspection_InitiateNewProcess@123ef382</td></tr>
+<td>MotorClaim._04_MotorClaim_CustomerReview@222545dc</td></tr>
 <tr>
-<td title='PreInspection._02_PreInspection_CustomerFormFill.Customer_Form_Fill()'><b>Customer_Form_Fill</b><br>Test class: PreInspection._02_PreInspection_CustomerFormFill<br/>
-<a href="#Output-536671860" onClick='toggleBox("Output-536671860", this, "Show output", "Hide output");'>Show output</a>
+<td title='MotorClaim._05_MotorClaim_RepairerAppointment.MotorClaim_RepairerAppointment()'><b>MotorClaim_RepairerAppointment</b><br>Test class: MotorClaim._05_MotorClaim_RepairerAppointment<br/>
+<a href="#Output-1066561773" onClick='toggleBox("Output-1066561773", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-536671860" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-536671860">
+<a href="#Output-1066561773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1066561773">
 Login Successfull<br/>
 </div>
 </td>
 <td></td>
-<td>40</td>
-<td>PreInspection._02_PreInspection_CustomerFormFill@52bf72b5</td></tr>
+<td>7</td>
+<td>MotorClaim._05_MotorClaim_RepairerAppointment@5c5eefef</td></tr>
 <tr>
-<td title='PreInspection._03_PreInspection_PreCheck.Pre_Check()'><b>Pre_Check</b><br>Test class: PreInspection._03_PreInspection_PreCheck<br/>
-<a href="#Output-1636824514" onClick='toggleBox("Output-1636824514", this, "Show output", "Hide output");'>Show output</a>
+<td title='MotorClaim._06_MotorClaim_RepairerReport.MotorClaim_RepairerReport()'><b>MotorClaim_RepairerReport</b><br>Test class: MotorClaim._06_MotorClaim_RepairerReport<br/>
+<a href="#Output-1266224518" onClick='toggleBox("Output-1266224518", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1636824514" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1636824514">
+<a href="#Output-1266224518" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1266224518">
 Login Successfull<br/>
 </div>
 </td>
 <td></td>
-<td>31</td>
-<td>PreInspection._03_PreInspection_PreCheck@37afeb11</td></tr>
+<td>11</td>
+<td>MotorClaim._06_MotorClaim_RepairerReport@16293aa2</td></tr>
 </table><p>
 </body>
 </html>

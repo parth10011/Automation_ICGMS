@@ -26,16 +26,19 @@ public class _07_MotorClaim_QCApproval extends BaseClassICGMS
 		
 		// Toaster Popup Click
 		ToasterPopupClick();
+		Thread.sleep(500);
 		
 		//Open View List
 		driver.findElement(By.xpath("//a[@href='/claim-details']")).click();
 		
 		//QC Approval Button Click
 		driver.findElement(By.xpath("(//button[text()='QC Approval'])[1]")).click();
+		Thread.sleep(500);
 		
 		//Enter Remark
 		WebElement remark = driver.findElement(By.xpath("//textarea[@placeholder='Enter Your Remark']"));
 		remark.sendKeys("Approval Done");
+		Thread.sleep(500);
 		
 		//Click Submit
 		WebElement submit = driver.findElement(By.xpath("//span[text()='Approve']"));

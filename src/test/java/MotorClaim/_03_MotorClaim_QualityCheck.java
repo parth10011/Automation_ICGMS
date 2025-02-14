@@ -39,9 +39,9 @@ public class _03_MotorClaim_QualityCheck extends BaseClassICGMS
 		claim_number.sendKeys("223");
 		
 		//Scroll to the particular web element of page
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView();", driver.findElement(By.xpath("(//label[text()='Upload Images'])[1]")));					
-		Thread.sleep(500);
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("arguments[0].scrollIntoView();", driver.findElement(By.xpath("(//label[text()='Upload Images'])[1]")));					
+//		Thread.sleep(500);
 		
 		// Front View Image approval
 //		WebElement Front_View = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//i[@class='eye-icon mdi mdi-eye'])[1]")));
@@ -140,6 +140,39 @@ public class _03_MotorClaim_QualityCheck extends BaseClassICGMS
 //		Accept = driver.findElement(By.xpath("//button[text()=' Accept ']"));
 //		Accept.click();
 //		Thread.sleep(1000);
+		
+		// Enter Date of Accident
+		driver.findElement(By.xpath("//input[@placeholder='Enter Date and Time of Accident/Loss']")).sendKeys(current_date);
+		
+		// Enter place of Accident
+		driver.findElement(By.xpath("//input[@placeholder='Enter Place of Accident/Loss:']")).sendKeys("Near Footpath");
+		
+		// Enter Purpose of vehicle used
+		driver.findElement(By.xpath("//input[@placeholder='Enter Purpose of use of vehicle at the time of Accident/Loss']")).sendKeys("Personal");
+		
+		// Enter details of existing policies
+		driver.findElement(By.xpath("//input[@placeholder='Enter Details of other existing insurance policies for the vehicle']")).sendKeys("No Details Enclosed");
+		
+		// Select Financier's Interest radio button
+		driver.findElement(By.xpath("(//div[text()=' No '])[1]")).click();
+		
+		// Enter Narration of cause of incident
+		driver.findElement(By.xpath("//textarea[@placeholder='(Do not state police report attached or as per police report )']")).sendKeys("dark night accident , very bad");
+		
+		// Enter nature of weight and goods
+		driver.findElement(By.xpath("//textarea[@placeholder='Enter Nature and weight of goods carried (for Goods Carrying Vehicle)']")).sendKeys("Fruit Basket and vegetables");
+		
+		// Enter number of occupants
+		driver.findElement(By.xpath("//input[@placeholder='Enter Number of occupants in the vehicle at the time of accident']")).sendKeys("No Details Enclosed");
+		
+		// Select Incident reported to police radio button
+		driver.findElement(By.xpath("(//div[text()=' No '])[2]")).click();
+		
+		//Enter date 
+		driver.findElement(By.xpath("(//input[@placeholder='Enter If yes, FIR/GD Entry No.'])[2]")).sendKeys(current_date);
+		
+		//Enter name of police station
+		driver.findElement(By.xpath("//input[@placeholder='Enter Police Station']")).sendKeys("Badli Police");
 		
 		//Enter Remark
 		WebElement remark = driver.findElement(By.xpath("//textarea[@formcontrolname='qc_remark']"));

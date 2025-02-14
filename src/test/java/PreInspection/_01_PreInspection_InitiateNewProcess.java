@@ -38,14 +38,15 @@ public class _01_PreInspection_InitiateNewProcess extends BaseClassICGMS
 		WebElement Product = driver.findElement(By.xpath("//*[@id=\"main-wrapper\"]/div[1]/div/app-claim-intimation/div[1]/div/div/div[2]/div/div/select"));
 
 		Select s2 = new Select(Product);
-		s2.selectByValue("20");
+		s2.selectByVisibleText("Motor Pre Inspection");
 		Thread.sleep(200);
 
-		// Select Insurer
-		WebElement Insurer = driver.findElement(By.xpath("//*[@id=\"main-wrapper\"]/div[1]/div/app-claim-intimation/div[1]/div/div/div[3]/div/div/select"));
+		// Select Type
+		String Type_Name = DBFunction.getDataFromExcelSheet(EXCEL_PATH, PreInspection_Type_Name, 1, 0);
+		WebElement Type = driver.findElement(By.xpath("//*[@id=\"main-wrapper\"]/div[1]/div/app-claim-intimation/div[1]/div/div/div[3]/div/div/select"));
 
-		Select s3 = new Select(Insurer);
-		s3.selectByValue(type_car);
+		Select s3 = new Select(Type);
+		s3.selectByVisibleText(Type_Name);
 
 		// Fill the required details
 		driver.findElement(By.cssSelector("input[formcontrolname='customer_email']")).sendKeys(Custemail);
@@ -57,9 +58,11 @@ public class _01_PreInspection_InitiateNewProcess extends BaseClassICGMS
 		driver.findElement(By.xpath("//input[@placeholder='Enter Fuel Type']")).sendKeys("Petrol");
 		driver.findElement(By.xpath("//input[@placeholder='Enter Make']")).sendKeys("Mitsubishi");
 		driver.findElement(By.xpath("//input[@placeholder='Enter Model']")).sendKeys("Omni");
-		driver.findElement(By.xpath("//input[@placeholder='Enter Rreference number']")).sendKeys("PA07CBNV33");
+		driver.findElement(By.xpath("//input[@placeholder='Enter Rreference number']")).sendKeys(current_date+"FEB");
 		driver.findElement(By.xpath("//input[@placeholder='Enter City']")).sendKeys("Rohini");
 		driver.findElement(By.xpath("//input[@placeholder='Enter Branch Name']")).sendKeys("parliament Rd");
+		driver.findElement(By.xpath("(//input[contains(@placeholder,'Enter your remark')])[1]")).sendKeys("Enter Remark 2");
+		driver.findElement(By.xpath("(//input[contains(@placeholder,'Enter your remark')])[2]")).sendKeys("Enter Remark 1");
 
 		// Toaster Popup Click
 		ToasterPopupClick();

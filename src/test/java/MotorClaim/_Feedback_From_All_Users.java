@@ -51,7 +51,7 @@ public class _Feedback_From_All_Users extends BaseClassICGMS
 	    
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void MotorClaim_Feedback_From_Insurer() throws InterruptedException, AWTException, EncryptedDocumentException, IOException
 	{	
 		
@@ -87,7 +87,7 @@ public class _Feedback_From_All_Users extends BaseClassICGMS
 	    
 	}
 	
-	@Test
+	@Test(priority = 3)
 	public void MotorClaim_Feedback_From_Repairer() throws InterruptedException, AWTException, EncryptedDocumentException, IOException
 	{	
 		
@@ -127,7 +127,7 @@ public class _Feedback_From_All_Users extends BaseClassICGMS
 	    
 	}
 	
-	@Test
+	@Test(priority = 4)
 	public void MotorClaim_Feedback_From_Surveyor() throws InterruptedException, AWTException, EncryptedDocumentException, IOException
 	{	
 		
@@ -166,7 +166,7 @@ public class _Feedback_From_All_Users extends BaseClassICGMS
 	    Thread.sleep(500);
 	}
 	    
-	@Test
+	@Test(priority = 5)
 	public void MotorClaim_FeedBack_FinalCompletion() throws InterruptedException, AWTException, EncryptedDocumentException, IOException
 	{
 		//Login

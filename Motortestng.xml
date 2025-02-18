@@ -21,7 +21,7 @@
       <class name="MotorClaim._16_MotorClaim_BillVerification"/>
       <class name="MotorClaim._17_MotorClaim_PaymentDetails"/>
       <class name="MotorClaim._18_MotorClaim_Completion"/>
-      <class name="MotorClaim.MotorClaim_Feedback_From_All_Users"/>
+      <class name="MotorClaim._Feedback_From_All_Users"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

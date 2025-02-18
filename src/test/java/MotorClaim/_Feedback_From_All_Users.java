@@ -12,7 +12,7 @@ import generic.BaseClassICGMS;
 import generic.DBFunction;
 import generic.login_ICGMS;
 
-public class MotorClaim_Feedback_From_All_Users extends BaseClassICGMS
+public class _Feedback_From_All_Users extends BaseClassICGMS
 {
 
 	@Test(priority = 1)

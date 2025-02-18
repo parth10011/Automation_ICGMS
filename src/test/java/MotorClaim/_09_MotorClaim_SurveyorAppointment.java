@@ -2,7 +2,6 @@ package MotorClaim;
 
 import java.awt.AWTException;
 import java.io.IOException;
-import java.util.NoSuchElementException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
@@ -36,12 +35,7 @@ public class _09_MotorClaim_SurveyorAppointment extends BaseClassICGMS
 		WebElement Surveyor_Name = driver.findElement(By.xpath("//select[@formcontrolname='surveyor_id']"));
 
 		Select s2 = new Select(Surveyor_Name);
-		try {
-		    s2.selectByVisibleText("Surveyor Phase I Corporation");
-		} catch (NoSuchElementException e) {
-		    s2.selectByVisibleText("UAT Test Surveyor ");
-		}
-//		s2.selectByVisibleText("Surveyor Phase I Corporation" or "UAT Test Surveyor "); 
+		s2.selectByVisibleText("Surveyor Phase I Corporation "); 
 		
 		//Enter Date Of Visit
 		WebElement date_visit = driver.findElement(By.xpath("//input[@type='date']"));

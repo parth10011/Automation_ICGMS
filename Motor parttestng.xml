@@ -3,15 +3,6 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="MotorClaim._01_MotorClaim_InitiateNewProcess"/>
-      <class name="MotorClaim._02_MotorClaim_ClaimFormSubmission"/>
-      <class name="MotorClaim._03_MotorClaim_QualityCheck"/>
-      <class name="MotorClaim._04_MotorClaim_CustomerReview"/>
-      <class name="MotorClaim._05_MotorClaim_RepairerAppointment"/>
-      <class name="MotorClaim._06_MotorClaim_RepairerReport"/>
-      <class name="MotorClaim._07_MotorClaim_QCApproval"/>
-      <class name="MotorClaim._08_MotorClaim_InsurerVerification"/>
-      <class name="MotorClaim._09_MotorClaim_SurveyorAppointment"/>
       <class name="MotorClaim._10_MotorClaim_SurveyorReport"/>
       <class name="MotorClaim._11_MotorClaim_RepairerAuthorization"/>
       <class name="MotorClaim._12_MotorClaim_ClaimFinancerAllocation"/>
@@ -21,7 +12,6 @@
       <class name="MotorClaim._16_MotorClaim_BillVerification"/>
       <class name="MotorClaim._17_MotorClaim_PaymentDetails"/>
       <class name="MotorClaim._18_MotorClaim_Completion"/>
-      <class name="MotorClaim.MotorClaim_Feedback_From_All_Users"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

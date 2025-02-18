@@ -12,14 +12,11 @@ import generic.BaseClassICGMS;
 import generic.DBFunction;
 import generic.login_ICGMS;
 
-public class _16_MotorClaim_BillVerification 
+public class _16_MotorClaim_BillVerification extends BaseClassICGMS
 {
 
-	public class _11_MotorClaim_RepairerAuthorization extends BaseClassICGMS 
-	{
-
 		@Test
-		public void MotorClaim_RepairerAuthorization() throws InterruptedException, AWTException, EncryptedDocumentException, IOException
+		public void MotorClaim_BillVerification() throws InterruptedException, AWTException, EncryptedDocumentException, IOException
 		{
 			//Login
 			String username = DBFunction.getDataFromExcelSheet(EXCEL_PATH, Surveyor_Login, 1, 0);
@@ -114,5 +111,5 @@ public class _16_MotorClaim_BillVerification
 	
 		}
 		
-	}	
+		
 }

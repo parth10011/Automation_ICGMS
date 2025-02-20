@@ -33,10 +33,11 @@ public class _03_MotorClaim_QualityCheck extends BaseClassICGMS
 		
 		//Quality Check Button Click
 		driver.findElement(By.xpath("(//button[text()='Quality Check'])[1]")).click();
+		Thread.sleep(1000);
 		
 		//Claim Number Enter
 		WebElement claim_number = driver.findElement(By.xpath("//input[@placeholder='Enter Claim Number' or @placeholder='Claim Number']"));
-		claim_number.sendKeys("223");
+		claim_number.sendKeys(randomYear);
 		
 		//Scroll to the particular web element of page
 //		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -174,9 +175,27 @@ public class _03_MotorClaim_QualityCheck extends BaseClassICGMS
 		//Enter name of police station
 		driver.findElement(By.xpath("//input[@placeholder='Enter Police Station']")).sendKeys("Badli Police");
 		
+		//Enter name of the driver
+		driver.findElement(By.xpath("//input[@placeholder='Enter Name of driver at time of accident']")).sendKeys("Chavan Kumar");
+		
+		//Enter date of birth of driver
+		driver.findElement(By.xpath("//input[@placeholder='Enter Date of birth of driver']")).sendKeys("12031991");
+		
+		//Enter driving license number of driver
+		driver.findElement(By.xpath("//input[@placeholder='Enter Driving License No.']")).sendKeys("DL97FIUS6543");
+		Thread.sleep(500);
+		
+		//Select relationship of driver to insured radio button
+		driver.findElement(By.xpath("//input[following-sibling::text()[contains(., 'Paid Driver')]]")).click();
+		
+		//Enter Other field
+		driver.findElement(By.xpath("//input[@placeholder='(Please Specify)']")).sendKeys("Other Imp Info");
+		
+		//Select accident resulted in any death radio button
+		driver.findElement(By.xpath("(//div[text()=' No '])[3]")).click();
+		
 		//Enter Remark
 		WebElement remark = driver.findElement(By.xpath("//textarea[@formcontrolname='qc_remark']"));
-		Thread.sleep(500);
 		remark.sendKeys("Approval Done");
 		
 		//Click Submit

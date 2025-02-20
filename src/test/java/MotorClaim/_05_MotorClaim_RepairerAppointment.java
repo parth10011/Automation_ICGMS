@@ -30,13 +30,13 @@ public class _05_MotorClaim_RepairerAppointment extends BaseClassICGMS
 		//Open Repairer Appointment
 		WebElement appoint_button = driver.findElement(By.xpath("(//button[text()='Repairer Appointment'])[1]"));
 		appoint_button.click();
-		Thread.sleep(500);
 		
 		//Select Repairer Type
 		WebElement Repair_Type = driver.findElement(By.xpath("//select[@formcontrolname='repairer_id']"));
 
 		Select s = new Select(Repair_Type);
 		s.selectByVisibleText(" Parth Repair Corporation ");
+//		s.selectByVisibleText("Ehtasham");
 		Thread.sleep(500);
 		
 		//Enter Remark

@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MotorClaim._Feedback_From_All_Users">
+      <class name="MotorClaim._05_MotorClaim_RepairerAppointment">
         <methods>
           <include name="Logout"/>
-          <include name="MotorClaim_FeedBack_FinalCompletion"/>
-          <include name="MotorClaim_Feedback_From_Repairer"/>
-          <include name="MotorClaim_Feedback_From_Insurer"/>
-          <include name="MotorClaim_Feedback_From_Customer"/>
           <include name="setup"/>
-          <include name="MotorClaim_Feedback_From_Surveyor"/>
+          <include name="MotorClaim_RepairerAppointment"/>
         </methods>
-      </class> <!-- MotorClaim._Feedback_From_All_Users -->
+      </class> <!-- MotorClaim._05_MotorClaim_RepairerAppointment -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

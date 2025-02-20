@@ -81,12 +81,12 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 			Thread.sleep(1000);
 			
 			// Submit Details
-//			WebElement submit = driver.findElement(By.xpath("/html/body/app-root/app-full-layout/div/div[1]/div/app-claim-intimation/div[2]/form/div[2]/button[1]"));			
-//			submit.click();
-//			Thread.sleep(1000);
-//			
-//			// Toaster Popup Click
-//			ToasterPopupClick();
+			WebElement submit = driver.findElement(By.xpath("/html/body/app-root/app-full-layout/div/div[1]/div/app-claim-intimation/div[2]/form/div[2]/button[1]"));			
+			submit.click();
+			Thread.sleep(1000);
+			
+			// Toaster Popup Click
+			ToasterPopupClick();
 				
 			//Open View List
 			driver.findElement(By.xpath("//a[@href='/claim-details']")).click();

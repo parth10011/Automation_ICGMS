@@ -35,8 +35,8 @@ public class _09_MotorClaim_SurveyorAppointment extends BaseClassICGMS
 		WebElement Surveyor_Name = driver.findElement(By.xpath("//select[@formcontrolname='surveyor_id']"));
 
 		Select s2 = new Select(Surveyor_Name);
-//		s2.selectByVisibleText("Surveyor Phase I Corporation ");
-		s2.selectByContainsVisibleText("Ehtasham");
+		s2.selectByVisibleText("Surveyor Phase I Corporation ");
+//		s2.selectByContainsVisibleText("Ehtasham");
 		
 		//Enter Date Of Visit
 		WebElement date_visit = driver.findElement(By.xpath("//input[@type='date']"));

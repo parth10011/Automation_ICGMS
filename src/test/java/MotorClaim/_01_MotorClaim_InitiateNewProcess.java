@@ -73,7 +73,6 @@ public class _01_MotorClaim_InitiateNewProcess extends BaseClassICGMS
 			
  			// Toaster Popup Click
 			ToasterPopupClick(); 
-		    
 			
 			//Scroll to the end of page
 			JavascriptExecutor js = (JavascriptExecutor) driver;

@@ -48,7 +48,7 @@ public class _08_MotorClaim_InsurerVerification extends BaseClassICGMS
 		Thread.sleep(2000);
 		
 		//Click on Self Inspection To Be Considered Radio Button
-		WebElement self_report_radio = driver.findElement(By.xpath("//input[@value='no']"));
+		WebElement self_report_radio = driver.findElement(By.xpath("//input[@value='yes']"));
 		self_report_radio.click();
 		
 		//Upload Document

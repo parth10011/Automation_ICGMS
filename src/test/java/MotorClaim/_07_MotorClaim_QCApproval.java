@@ -45,6 +45,9 @@ public class _07_MotorClaim_QCApproval extends BaseClassICGMS
 		submit.click();
 		Thread.sleep(1000);
 		
+		// Toaster Popup Click
+		ToasterPopupClick();
+		
 		//Open View List
 		driver.findElement(By.xpath("//a[@href='/claim-details']")).click();
 		

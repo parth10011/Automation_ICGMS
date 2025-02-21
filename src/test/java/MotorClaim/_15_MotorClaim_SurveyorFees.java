@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
@@ -73,6 +74,11 @@ public class _15_MotorClaim_SurveyorFees extends BaseClassICGMS
         WebElement close_button = driver.findElement(By.xpath("//button[@aria-label='Close']"));
 	    close_button.click();
 	    Thread.sleep(1000);
+	    
+	    //Scroll to the end of page
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");					
+		Thread.sleep(1000);
 	    
 	    //Submit Customer Form
 		WebElement submit = driver.findElement(By.xpath("(//button[@type='submit'])[2]"));

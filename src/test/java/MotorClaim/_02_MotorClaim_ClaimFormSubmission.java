@@ -66,113 +66,113 @@ public class _02_MotorClaim_ClaimFormSubmission extends BaseClassICGMS
     	Thread.sleep(1000);
 		
 		//Set Browser to Mobile View
-		driver.manage().window().setSize(Mobile_View);
-		Thread.sleep(1000);
-		
-		//Add Robot Class
-		Robot r = new Robot();
-	    Thread.sleep(1000);
-		    	
-		//Upload Front View Selfie Image
-		WebElement Front_View_Selfie = driver.findElement(By.xpath("//label[@for='front_view_selfie']"));  	
-		Front_View_Selfie.click();
-		    	
-		Thread.sleep(1000);
-		    	
-		r.keyPress(KeyEvent.VK_ESCAPE);
-		r.keyRelease(KeyEvent.VK_ESCAPE);
-    	Thread.sleep(700);    	
-        
-    	WebElement Front_View_Input = driver.findElement(By.xpath("//input[@id='front_view_selfie']"));
-    	Thread.sleep(500);
-		    	
-    	Front_View_Input.sendKeys(Img_Link);
-    	
-    	//Maximize Screen
-    	driver.manage().window().maximize();
-    		
-    	
-    	//Upload Chassis Number Image    	    	        
-    	WebElement Chassis_Number_Input = driver.findElement(By.xpath("//input[@id='chassis_number']")); 
-    	Thread.sleep(1000);
-    	Chassis_Number_Input.sendKeys(Img_Link);
-    	
-    	
-    	//Upload Odometer Number Image    	    	        
-    	WebElement Odometer_Number_Input = driver.findElement(By.xpath("//input[@id='odometer_reading']"));    	
-    	Thread.sleep(1000);
-    	Odometer_Number_Input.sendKeys(Img_Link);
-    	
-    	
-    	//Upload Front Rh View Image    	        
-    	WebElement Front_Rh_View_Input = driver.findElement(By.xpath("//input[@id='front_rh_view']"));    	
-    	Thread.sleep(1000);
-    	Front_Rh_View_Input.sendKeys(Img_Link);
-    	
-    	
-    	//Upload Front Lh View Image   	        
-    	WebElement Front_Lh_View_Input = driver.findElement(By.xpath("//input[@id='front_lh_view']")); 
-    	Thread.sleep(1000);
-    	Front_Lh_View_Input.sendKeys(Img_Link);
-    	
-    	
-    	//Upload Rear View Image    	        
-    	WebElement Rear_View_Input = driver.findElement(By.xpath("//input[@id='rear_view']"));    	
-    	Thread.sleep(1000);
-    	Rear_View_Input.sendKeys(Img_Link);
-    	
-    	
-    	//Upload Rear Lh View Image        
-    	WebElement Rear_Lh_View_Input = driver.findElement(By.xpath("//input[@id='rear_lh_view']"));    	
-    	Thread.sleep(1000);
-    	Rear_Lh_View_Input.sendKeys(Img_Link);
-    	
-    	
-    	//Upload Rear Rh View Image    	        
-    	WebElement Rear_Rh_View_Input = driver.findElement(By.xpath("//input[@id='rear_rh_view']"));    	
-    	Thread.sleep(1000);
-    	Rear_Rh_View_Input.sendKeys(Img_Link);
-    	
-    	//Upload RC Copy Image        
-    	WebElement RC_Copy_Input = driver.findElement(By.xpath("//input[@id='rc_copy']"));    	
-    	Thread.sleep(1000);
-    	RC_Copy_Input.sendKeys(Img_Link);
-    	
-    	
-    	//Upload Front Windscreen Inside Image    	
-    	WebElement Front_Windscreen_Inside_Input = driver.findElement(By.xpath("//input[@id='front_windscreen_inside']"));    	
-    	Thread.sleep(1000);
-    	Front_Windscreen_Inside_Input.sendKeys(Img_Link);    	
-    	
-    	
-    	//Upload Engine Compartment Image    	
-    	WebElement Engine_Compartment_Input = driver.findElement(By.xpath("//input[@id='engine_compartment_photo']"));    	
-    	Thread.sleep(1000);
-    	Engine_Compartment_Input.sendKeys(Img_Link);
-    	
-    	
-    	//Upload Front Windscreen Outside Image    	
-    	WebElement Front_Windscreen_Outside_Input = driver.findElement(By.xpath("//input[@id='front_windscreen_outside']"));    	
-    	Thread.sleep(1000);
-    	Front_Windscreen_Outside_Input.sendKeys(Img_Link);
-    	  	
-    	
-    	//Upload Dashboard Image    	
-    	WebElement Dashboard_Input = driver.findElement(By.xpath("//input[@id='dashboard']"));    	
-    	Thread.sleep(1000);
-    	Dashboard_Input.sendKeys(Img_Link);
-    	
-		
-    	//Upload Under Chassis Image    	
-    	WebElement Under_Chassis_Input = driver.findElement(By.xpath("//input[@id='under_chassis']"));    	
-    	Thread.sleep(1000);
-    	Under_Chassis_Input.sendKeys(Img_Link);
-    	
-    	//Upload Walkaround Video
-    	WebElement Video_Input = driver.findElement(By.xpath("//input[@id='walkaround_video']"));    	
-    	Thread.sleep(1000);
-    	Video_Input.sendKeys(Vid_Link);
-    	Thread.sleep(1000);
+//		driver.manage().window().setSize(Mobile_View);
+//		Thread.sleep(1000);
+//		
+//		//Add Robot Class
+//		Robot r = new Robot();
+//	    Thread.sleep(1000);
+//		    	
+//		//Upload Front View Selfie Image
+//		WebElement Front_View_Selfie = driver.findElement(By.xpath("//label[@for='front_view_selfie']"));  	
+//		Front_View_Selfie.click();
+//		    	
+//		Thread.sleep(1000);
+//		    	
+//		r.keyPress(KeyEvent.VK_ESCAPE);
+//		r.keyRelease(KeyEvent.VK_ESCAPE);
+//    	Thread.sleep(700);    	
+//        
+//    	WebElement Front_View_Input = driver.findElement(By.xpath("//input[@id='front_view_selfie']"));
+//    	Thread.sleep(500);
+//		    	
+//    	Front_View_Input.sendKeys(Img_Link);
+//    	
+//    	//Maximize Screen
+//    	driver.manage().window().maximize();
+//    		
+//    	
+//    	//Upload Chassis Number Image    	    	        
+//    	WebElement Chassis_Number_Input = driver.findElement(By.xpath("//input[@id='chassis_number']")); 
+//    	Thread.sleep(1000);
+//    	Chassis_Number_Input.sendKeys(Img_Link);
+//    	
+//    	
+//    	//Upload Odometer Number Image    	    	        
+//    	WebElement Odometer_Number_Input = driver.findElement(By.xpath("//input[@id='odometer_reading']"));    	
+//    	Thread.sleep(1000);
+//    	Odometer_Number_Input.sendKeys(Img_Link);
+//    	
+//    	
+//    	//Upload Front Rh View Image    	        
+//    	WebElement Front_Rh_View_Input = driver.findElement(By.xpath("//input[@id='front_rh_view']"));    	
+//    	Thread.sleep(1000);
+//    	Front_Rh_View_Input.sendKeys(Img_Link);
+//    	
+//    	
+//    	//Upload Front Lh View Image   	        
+//    	WebElement Front_Lh_View_Input = driver.findElement(By.xpath("//input[@id='front_lh_view']")); 
+//    	Thread.sleep(1000);
+//    	Front_Lh_View_Input.sendKeys(Img_Link);
+//    	
+//    	
+//    	//Upload Rear View Image    	        
+//    	WebElement Rear_View_Input = driver.findElement(By.xpath("//input[@id='rear_view']"));    	
+//    	Thread.sleep(1000);
+//    	Rear_View_Input.sendKeys(Img_Link);
+//    	
+//    	
+//    	//Upload Rear Lh View Image        
+//    	WebElement Rear_Lh_View_Input = driver.findElement(By.xpath("//input[@id='rear_lh_view']"));    	
+//    	Thread.sleep(1000);
+//    	Rear_Lh_View_Input.sendKeys(Img_Link);
+//    	
+//    	
+//    	//Upload Rear Rh View Image    	        
+//    	WebElement Rear_Rh_View_Input = driver.findElement(By.xpath("//input[@id='rear_rh_view']"));    	
+//    	Thread.sleep(1000);
+//    	Rear_Rh_View_Input.sendKeys(Img_Link);
+//    	
+//    	//Upload RC Copy Image        
+//    	WebElement RC_Copy_Input = driver.findElement(By.xpath("//input[@id='rc_copy']"));    	
+//    	Thread.sleep(1000);
+//    	RC_Copy_Input.sendKeys(Img_Link);
+//    	
+//    	
+//    	//Upload Front Windscreen Inside Image    	
+//    	WebElement Front_Windscreen_Inside_Input = driver.findElement(By.xpath("//input[@id='front_windscreen_inside']"));    	
+//    	Thread.sleep(1000);
+//    	Front_Windscreen_Inside_Input.sendKeys(Img_Link);    	
+//    	
+//    	
+//    	//Upload Engine Compartment Image    	
+//    	WebElement Engine_Compartment_Input = driver.findElement(By.xpath("//input[@id='engine_compartment_photo']"));    	
+//    	Thread.sleep(1000);
+//    	Engine_Compartment_Input.sendKeys(Img_Link);
+//    	
+//    	
+//    	//Upload Front Windscreen Outside Image    	
+//    	WebElement Front_Windscreen_Outside_Input = driver.findElement(By.xpath("//input[@id='front_windscreen_outside']"));    	
+//    	Thread.sleep(1000);
+//    	Front_Windscreen_Outside_Input.sendKeys(Img_Link);
+//    	  	
+//    	
+//    	//Upload Dashboard Image    	
+//    	WebElement Dashboard_Input = driver.findElement(By.xpath("//input[@id='dashboard']"));    	
+//    	Thread.sleep(1000);
+//    	Dashboard_Input.sendKeys(Img_Link);
+//    	
+//		
+//    	//Upload Under Chassis Image    	
+//    	WebElement Under_Chassis_Input = driver.findElement(By.xpath("//input[@id='under_chassis']"));    	
+//    	Thread.sleep(1000);
+//    	Under_Chassis_Input.sendKeys(Img_Link);
+//    	
+//    	//Upload Walkaround Video
+//    	WebElement Video_Input = driver.findElement(By.xpath("//input[@id='walkaround_video']"));    	
+//    	Thread.sleep(1000);
+//    	Video_Input.sendKeys(Vid_Link);
+//    	Thread.sleep(1000);
     	
     	//PAN Card Upload
     	WebElement PAN_Input = driver.findElement(By.xpath("(//input[@accept='application/pdf'])[1]"));    	

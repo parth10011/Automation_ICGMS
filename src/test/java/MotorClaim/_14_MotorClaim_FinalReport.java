@@ -36,7 +36,7 @@ public class _14_MotorClaim_FinalReport extends BaseClassICGMS
 		claim_list.click();
 
 		//Open Final Report
-		WebElement finalReport_button = driver.findElement(By.xpath("(//button[text()='Final Report'])[1]"));
+		WebElement finalReport_button = driver.findElement(By.xpath("//button[contains(text(),'Final Report')][1]"));
 		finalReport_button.click();
 		Thread.sleep(500);
 				

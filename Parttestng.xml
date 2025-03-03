@@ -3,6 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="MotorClaim._03_MotorClaim_QualityCheck"/>
+      <class name="MotorClaim._04_MotorClaim_CustomerReview"/>
+      <class name="MotorClaim._05_MotorClaim_RepairerAppointment"/>
       <class name="MotorClaim._06_MotorClaim_RepairerReport"/>
       <class name="MotorClaim._07_MotorClaim_QCApproval"/>
       <class name="MotorClaim._08_MotorClaim_InsurerVerification"/>

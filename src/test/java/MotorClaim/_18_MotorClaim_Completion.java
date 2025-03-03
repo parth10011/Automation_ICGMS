@@ -47,6 +47,7 @@ public class _18_MotorClaim_Completion extends BaseClassICGMS
 		//Click Submit
 	    WebElement submit = driver.findElement(By.xpath("//span[text()='Submit']"));
 	    submit.click();
+	    Thread.sleep(500);
 	    
 	    //Toaster Popup Click
 	    ToasterPopupClick();

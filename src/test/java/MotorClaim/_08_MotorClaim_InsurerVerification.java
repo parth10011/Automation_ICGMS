@@ -60,7 +60,7 @@ public class _08_MotorClaim_InsurerVerification extends BaseClassICGMS
 		File_Name.sendKeys("Dummydotpdf");
 		
 		//Click Approve
-		WebElement Approve_Button = driver.findElement(By.xpath("//span[text()='Reject']"));
+		WebElement Approve_Button = driver.findElement(By.xpath("//span[text()='Approve']"));
 		Approve_Button.click();
 		Thread.sleep(2000);
 		

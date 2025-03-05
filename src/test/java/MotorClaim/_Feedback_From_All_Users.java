@@ -47,7 +47,7 @@ public class _Feedback_From_All_Users extends BaseClassICGMS
 		//Click Submit
 	    WebElement submit = driver.findElement(By.xpath("//button[text()='Submit']"));
 	    submit.click();
-	    Thread.sleep(500);
+	    Thread.sleep(800);
 	    
 	}
 	

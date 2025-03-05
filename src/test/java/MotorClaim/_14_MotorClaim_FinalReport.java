@@ -108,6 +108,7 @@ public class _14_MotorClaim_FinalReport extends BaseClassICGMS
 		// Toaster Pdf Popup Click
         WebElement pdf_toaster = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@toast-component='']")));
         pdf_toaster.click();
+        Thread.sleep(1000);
         
         //Close Button Click
         WebElement close_button = driver.findElement(By.xpath("//button[@aria-label='Close']"));

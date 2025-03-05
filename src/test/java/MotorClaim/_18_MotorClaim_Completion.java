@@ -43,6 +43,7 @@ public class _18_MotorClaim_Completion extends BaseClassICGMS
 		//Select Process Completed radio button
 		WebElement proComp = driver.findElement(By.id("processedYes"));
 		proComp.click();
+		Thread.sleep(500);
 		
 		//Click Submit
 	    WebElement submit = driver.findElement(By.xpath("//span[text()='Submit']"));

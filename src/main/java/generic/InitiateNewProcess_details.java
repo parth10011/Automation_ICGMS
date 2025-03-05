@@ -71,7 +71,7 @@ public interface InitiateNewProcess_details
 	String randomCustName = getRandomName();
 	String randomRepairName = getRandomName();
 	String randomColorName = getRandomColor();
-	String Est_Report = "C:\\Users\\parth\\Downloads\\TAS-Manage Master - REC Bid Date-130924-051456.pdf";
+	String Est_Report = "C:/Users/Parth Grover/Desktop/DTU/Sharajman Work/New folder (2)/TestNG Report.pdf";
 	String Img_Link = "C:/Users/Parth Grover/Desktop/DTU/Sharajman Work/Insurer - Claims of all insurers are visible to Royal Sundaram Insurer.png";
 	String Vid_Link = "C:/Users/Parth Grover/Desktop/DTU/Sharajman Work/Sample Video.mp4";
 	String Doc_Link = "C:/Users/Parth Grover/Desktop/DTU/Dummy.pdf";
